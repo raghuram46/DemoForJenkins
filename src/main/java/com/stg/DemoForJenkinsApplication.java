@@ -13,7 +13,7 @@ public class DemoForJenkinsApplication {
 	public static Logger logger = LoggerFactory.getLogger(DemoForJenkinsApplication.class);
 	
 	@PostConstruct
-	public  print() {
+	public void print() {
 		logger.info("main appplication has started");
 		logger.info("main appplication has executing");
 	}
