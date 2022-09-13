@@ -1,5 +1,7 @@
 package com.stg;
 
+import javax.annotation.PostConstruct;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -10,9 +12,9 @@ public class DemoForJenkinsApplication {
 	
 	public static Logger logger = LoggerFactory.getLogger(DemoForJenkinsApplication.class);
 	
-	public void calculateSum(int a, int b) {
+	@PostConstruct
+	public void print() {
 		logger.info("Test case executing");
-		logger.info("sum of two numbers is : "+ (a+b));
 	}
 
 	public static void main(String[] args) {
