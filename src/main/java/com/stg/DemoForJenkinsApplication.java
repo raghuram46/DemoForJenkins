@@ -14,7 +14,7 @@ public class DemoForJenkinsApplication {
 	
 	@PostConstruct
 	public void print() {
-		logger.info("Test case executing");
+		logger.info("Appication  started");
 	}
 
 	public static void main(String[] args) {
