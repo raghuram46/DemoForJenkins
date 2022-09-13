@@ -14,7 +14,7 @@ public class DemoForJenkinsApplication {
 	
 	@PostConstruct
 	public void print() {
-		logger.info("main app started");
+		logger.info("main appplication has started");
 	}
 
 	public static void main(String[] args) {
